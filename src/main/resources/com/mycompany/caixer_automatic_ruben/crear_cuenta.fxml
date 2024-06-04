@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.caixer_automatic_ruben.CrearCuentaController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="46.0" layoutY="181.0" text="Selecciona el tipo de cuenta:">
+         <font>
+            <Font name="Gayathri Regular" size="21.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect></Label>
+      <Button fx:id="CrearCuentaBtn" layoutX="104.0" layoutY="360.0" mnemonicParsing="false" onAction="#CrearNuevaCuenta" style="-fx-background-color: #a21f2a;" text="Crear Cuenta" textFill="WHITE">
+         <font>
+            <Font name="Gayathri Regular" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <RadioButton fx:id="CorrienteBtn" layoutX="117.0" layoutY="245.0" mnemonicParsing="false" selected="true" text="Corriente">
+         <toggleGroup>
+            <ToggleGroup fx:id="Tipus" />
+         </toggleGroup>
+         <font>
+            <Font name="Gayathri Regular" size="20.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </RadioButton>
+      <RadioButton fx:id="AhorroBtn" layoutX="118.0" layoutY="284.0" mnemonicParsing="false" prefHeight="22.0" prefWidth="104.0" text="Ahorro" toggleGroup="$Tipus">
+         <font>
+            <Font name="Gayathri Regular" size="20.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect></RadioButton>
+      <Button fx:id="VolverBtn" layoutX="623.0" layoutY="25.0" mnemonicParsing="false" onAction="#OtrasOperaciones" prefHeight="48.0" prefWidth="104.0" style="-fx-background-color: #ea0000;" text="Volver" textFill="WHITE">
+         <font>
+            <Font name="Gayathri Regular" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Label fx:id="mensaje" alignment="CENTER" contentDisplay="CENTER" layoutX="30.0" layoutY="447.0" prefHeight="67.0" prefWidth="693.0" textAlignment="CENTER">
+         <font>
+            <Font name="Courier New Bold Italic" size="16.0" />
+         </font></Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="57.0" layoutY="121.0" prefHeight="38.0" prefWidth="240.0" text="Crear nueva cuenta" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="Gayathri Regular" size="25.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Separator layoutX="-1.0" layoutY="92.0" prefHeight="10.0" prefWidth="355.0" />
+      <VBox layoutX="600.0" prefHeight="400.0" prefWidth="0.0" style="-fx-background-color: orange;" />
+      <Separator layoutX="-1.0" layoutY="437.0" prefHeight="10.0" prefWidth="750.0" />
+      <ImageView fitHeight="78.0" fitWidth="263.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/banner.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="348.0" layoutY="-6.0" orientation="VERTICAL" prefHeight="447.0" prefWidth="12.0" />
+      <ImageView fitHeight="308.0" fitWidth="409.0" layoutX="340.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/logopage.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.caixer_automatic_ruben.OtrasOperacionesController">
+   <children>
+      <Button fx:id="VolverBancBtn" layoutX="614.0" layoutY="25.0" mnemonicParsing="false" onAction="#volverBanc" prefHeight="48.0" prefWidth="109.0" style="-fx-background-color: #ea0000;" text="Volver" textFill="WHITE">
+         <font>
+            <Font name="Gayathri Regular" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Label fx:id="usuario_actual" layoutX="428.0" layoutY="35.0" prefHeight="38.0" prefWidth="163.0" text="user">
+         <font>
+            <Font name="Gayathri Regular" size="23.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect></Label>
+      <Button fx:id="ConsultarCuentasBtn" layoutX="421.0" layoutY="182.0" mnemonicParsing="false" onAction="#consultarCuentas" prefHeight="51.0" prefWidth="271.0" style="-fx-background-color: #a21f2a;" text="Consultar Cuentas" textFill="WHITE">
+         <font>
+            <Font name="Gayathri Regular" size="22.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Button fx:id="CambiarContraseñaBtn" layoutX="421.0" layoutY="391.0" mnemonicParsing="false" onAction="#cambiarContraseña" prefHeight="51.0" prefWidth="271.0" style="-fx-background-color: #a21f2a;" text="Cambiar Contraseña" textFill="WHITE">
+         <font>
+            <Font name="Gayathri Regular" size="22.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Button fx:id="CrearNuevaCuentaBtn" layoutX="421.0" layoutY="290.0" mnemonicParsing="false" onAction="#crearCuenta" prefHeight="51.0" prefWidth="271.0" style="-fx-background-color: #a21f2a;" text="Crear Cuenta" textFill="WHITE">
+         <font>
+            <Font name="Gayathri Regular" size="22.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Label layoutX="327.0" layoutY="34.0" text="Usuario:">
+         <font>
+            <Font name="Gayathri Regular" size="25.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Separator layoutX="-1.0" layoutY="105.0" prefHeight="0.0" prefWidth="750.0" />
+      <ImageView fitHeight="73.0" fitWidth="260.0" layoutX="21.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/banner.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="355.0" fitWidth="480.0" layoutX="-52.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/logopage.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="366.0" layoutY="105.0" orientation="VERTICAL" prefHeight="445.0" prefWidth="0.0" />
+   </children>
+</AnchorPane>

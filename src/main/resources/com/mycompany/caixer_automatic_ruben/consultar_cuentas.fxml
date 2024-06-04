@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.caixer_automatic_ruben.ConsultarCuentasController">
+   <children>
+      <ListView fx:id="ListaCuentas" layoutX="385.0" layoutY="160.0" prefHeight="217.0" prefWidth="334.0">
+         <effect>
+            <Glow />
+         </effect></ListView>
+      <Label layoutX="385.0" layoutY="62.0" text="CUENTAS" underline="true">
+         <font>
+            <Font name="Gayathri Regular" size="25.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect></Label>
+      <Button fx:id="ConsultarBtn" layoutX="449.0" layoutY="392.0" mnemonicParsing="false" onAction="#Consultar" prefHeight="48.0" prefWidth="205.0" style="-fx-background-color: #a21f2a;" text="Consultar" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Button fx:id="VolverBtn" layoutX="628.0" layoutY="22.0" mnemonicParsing="false" onAction="#OtrasOperaciones" prefHeight="37.0" prefWidth="101.0" style="-fx-background-color: #ea0000;" text="Volver" textFill="WHITE">
+         <font>
+            <Font name="Garuda" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Label fx:id="Detalles" alignment="TOP_LEFT" layoutX="19.0" layoutY="109.0" prefHeight="112.0" prefWidth="361.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect></Label>
+      <Label fx:id="Mensaje" alignment="CENTER" contentDisplay="CENTER" layoutX="37.0" layoutY="468.0" prefHeight="67.0" prefWidth="683.0" textAlignment="CENTER">
+         <font>
+            <Font name="Corbel Bold" size="15.0" />
+         </font></Label>
+      <TextArea fx:id="Movimientos" editable="false" layoutX="17.0" layoutY="271.0" prefHeight="181.0" prefWidth="361.0" style="-fx-control-inner-background: rgba(0, 0, 0, 0); -fx-text-fill: #000000; -fx-background-color: rgba(0, 0, 0, 0);" text=" ">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <font>
+            <Font size="17.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect></TextArea>
+      <Label fx:id="SaldoTotal" layoutX="271.0" layoutY="17.0" prefHeight="37.0" prefWidth="334.0" text="saldo total " textAlignment="CENTER">
+         <font>
+            <Font name="Gayathri Regular" size="22.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label layoutX="387.0" layoutY="109.0" text="Elige tu cuenta:">
+         <font>
+            <Font name="Gayathri Regular" size="22.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label layoutX="22.0" layoutY="234.0" text="Movimientos:">
+         <font>
+            <Font name="Gayathri Regular" size="22.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label layoutX="19.0" layoutY="69.0" text="Detalles de la cuenta:">
+         <font>
+            <Font name="Gayathri Regular" size="22.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Separator layoutX="5.0" layoutY="226.0" prefHeight="3.0" prefWidth="361.0" />
+      <ImageView fitHeight="67.0" fitWidth="247.0" layoutX="9.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/banner.png" />
+         </image>
+      </ImageView>
+      <Separator layoutY="456.0" prefHeight="3.0" prefWidth="750.0" />
+   </children>
+</AnchorPane>
