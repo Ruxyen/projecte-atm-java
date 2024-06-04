@@ -18,7 +18,7 @@ import java.util.ArrayList;
 public class Usuarios {
   
   // Ruta del archivo CSV que contiene la información de los usuarios
-  private static final String Usuarios_csv = "/home/alumne/Escriptori/MazeBank/caixer_automatic_ruben/src/main/java/com/mycompany/caixer_automatic_ruben/csv/Usuarios.csv";
+  private static final String Usuarios_csv = "C:\\Users\\ruben\\OneDrive\\Escritorio\\PROYECTOS\\Java\\projecte-atm-java\\src\\main\\java\\com\\mycompany\\caixer_automatic_ruben\\csv\\Usuarios.csv";
   
   // ArrayList que almacena todos los usuarios registrados
   public static ArrayList<Usuario> ListadeUsuarios = new ArrayList<Usuario>();

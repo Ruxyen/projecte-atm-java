@@ -18,7 +18,7 @@ import java.util.ArrayList;
 public class Movimientos {
 
     // Ruta del archivo csv que contiene los movimientos bancarios.
-    private static final String Movimientos_csv = "/home/alumne/Escriptori/MazeBank/caixer_automatic_ruben/src/main/java/com/mycompany/caixer_automatic_ruben/csv/Movimientos.csv";
+    private static final String Movimientos_csv = "C:\\Users\\ruben\\OneDrive\\Escritorio\\PROYECTOS\\Java\\projecte-atm-java\\src\\main\\java\\com\\mycompany\\caixer_automatic_ruben\\csv\\Movimientos.csv";
 
 // Lista que contiene todos los movimientos bancarios.
     public static ArrayList<Movimiento> ListadeMovimientos = new ArrayList<Movimiento>();

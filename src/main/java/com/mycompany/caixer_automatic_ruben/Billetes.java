@@ -27,7 +27,7 @@ import java.util.ArrayList;
 public class Billetes {
 
     /** La ruta del archivo CSV de los billetes. */
-    private static final String Billetes_csv = "/home/alumne/Escriptori/MazeBank/caixer_automatic_ruben/src/main/java/com/mycompany/caixer_automatic_ruben/csv/Billets.csv";
+    private static final String Billetes_csv = "C:\\Users\\ruben\\OneDrive\\Escritorio\\PROYECTOS\\Java\\projecte-atm-java\\src\\main\\java\\com\\mycompany\\caixer_automatic_ruben\\csv\\Billets.csv";
 
     /** La lista de billetes. */
     public static ArrayList<Billete> ListadeBilletes = new ArrayList<Billete>();

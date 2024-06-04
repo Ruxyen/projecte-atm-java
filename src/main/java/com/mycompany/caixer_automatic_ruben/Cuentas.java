@@ -19,7 +19,7 @@ public class Cuentas {
     /**
      * Ruta del archivo CSV que almacena las cuentas.
      */
-    private static final String Cuentas_csv = "/home/alumne/Escriptori/MazeBank/caixer_automatic_ruben/src/main/java/com/mycompany/caixer_automatic_ruben/csv/Cuentas.csv";
+    private static final String Cuentas_csv = "C:\\Users\\ruben\\OneDrive\\Escritorio\\PROYECTOS\\Java\\projecte-atm-java\\src\\main\\java\\com\\mycompany\\caixer_automatic_ruben\\csv\\Cuentas.csv";
 
     /**
      * Lista de todas las cuentas del sistema.
